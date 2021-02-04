@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Praticas/HTML e CSS/favicon.ico" type="image/x-icon">
     <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: mediumspringgreen;
+        }
+    </style> <!--Se desejar que toda marcação de texto tenha a mesma cor diferente da padrão é só estilizar a tag no cabeçalho #Não esquecer de colocar o nome da tag a ser estilizada-->
 </head>
 <body>
     <h1>Principais formatações</h1>
@@ -19,5 +24,28 @@
         Nesta frase temos um <em> termo em ênfase </em> 
         usando a tag &lt;em&gt; (semântica)
     </p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar <mark>um texto marcado</mark> usando a tag &lt;mark&gt;
+    <!--Inserir style="background-color: cor desejada" após a abertura da tag mark quando desejar alterar a cor de algumas marcações de texto-->
+    </p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.
+     </p>
+     <h2>Texto grande e pequeno</h2>
+     <p>Estamos criando um <big>texto grande</big> e um <smal>texto pequeno</smal> nesse parágrafo.</p>
+     <!--a tag <big> </big> está obsoleta-->
+     <h2>Texto deletado</h2>
+     <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+     <h2>Texto inserido</h2>
+     <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.
+    </p>
+     <p>Existe também existe o <u>sublinhado</u> com a tag U (não semmântica)</p>
+     <h2>Texto sobescrito</h2>
+     <p>
+         Para inserir coisas do tipo x<sup>20</sup>+3
+     </p>
+     <h2>Texto subescrito</h2>
+     <p>
+         Para inserir coisas do tipo H<sub>2</sub>O
+     </p>
 </body>
 </html>
