@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas OL e UL</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <style>
+        ul{
+            list-style: none;
+            display: inline-flex;
+            float: right;
+           
+        }
+        li{
+            padding: 5px;
+            cursor: pointer;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li class="list">home</li>
+                <li class="list">Produtos</li>
+                <li class="list">Sobre</li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        ( function full(win,  doc){
+            'use strict';
+
+        // let list = document.querySelector('.list');
+        // list.addEventListener('mouseover', function () {
+        //     list.style.backgroundColor = 'red'
+        // })
+        let list = doc.querySelectorAll('.list');
+        
+            for(let i = 0; i < list.length; i++){
+                list[i].addEventListener('mouseover', function(){
+                    // list[i].style.textShadow = 'red 5px 5px 5px';
+                    list[i].style.boxShadow = 'gray 5px 5px 5px';
+                    list[i].style.borderRadius = '5px'
+                });
+            }
+
+            for(let i = 0; i < list.length; i++){
+                list[i].addEventListener('mouseout', function(){
+                    list[i].style.textShadow = 'none';
+                    list[i].style.boxShadow = 'none';
+                });
+            }
+
+        
+        })(window, document);
+    </script>
+</body>
+</html>
